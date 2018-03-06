@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F12856A5204EBF5200D7CE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856A4204EBF5200D7CE47 /* AppDelegate.swift */; };
-		F12856A7204EBF5200D7CE47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856A6204EBF5200D7CE47 /* ViewController.swift */; };
-		F12856AA204EBF5200D7CE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12856A8204EBF5200D7CE47 /* Main.storyboard */; };
 		F12856AC204EBF5200D7CE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12856AB204EBF5200D7CE47 /* Assets.xcassets */; };
 		F12856AF204EBF5200D7CE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12856AD204EBF5200D7CE47 /* LaunchScreen.storyboard */; };
+		F12856B8204EBFA000D7CE47 /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12856B7204EBFA000D7CE47 /* PeopleView.xib */; };
+		F12856BA204EBFB800D7CE47 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856B9204EBFB800D7CE47 /* PeopleView.swift */; };
+		F12856BC204EC02100D7CE47 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856BB204EC02100D7CE47 /* PeopleViewController.swift */; };
+		F12856BE204EC18600D7CE47 /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856BD204EC18600D7CE47 /* PeopleModel.swift */; };
+		F12856C0204EC1A800D7CE47 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856BF204EC1A800D7CE47 /* PeopleViewModel.swift */; };
+		F12856C3204EC41300D7CE47 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12856C2204EC41300D7CE47 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F12856A1204EBF5200D7CE47 /* ScratchXib2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchXib2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12856A4204EBF5200D7CE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F12856A6204EBF5200D7CE47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F12856A9204EBF5200D7CE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F12856AB204EBF5200D7CE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12856AE204EBF5200D7CE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12856B0204EBF5200D7CE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12856B7204EBFA000D7CE47 /* PeopleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleView.xib; sourceTree = "<group>"; };
+		F12856B9204EBFB800D7CE47 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		F12856BB204EC02100D7CE47 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		F12856BD204EC18600D7CE47 /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		F12856BF204EC1A800D7CE47 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		F12856C2204EC41300D7CE47 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				F12856A4204EBF5200D7CE47 /* AppDelegate.swift */,
-				F12856A6204EBF5200D7CE47 /* ViewController.swift */,
-				F12856A8204EBF5200D7CE47 /* Main.storyboard */,
+				F12856B6204EBF6E00D7CE47 /* People */,
+				F12856C1204EC40600D7CE47 /* Utility */,
 				F12856AB204EBF5200D7CE47 /* Assets.xcassets */,
 				F12856AD204EBF5200D7CE47 /* LaunchScreen.storyboard */,
 				F12856B0204EBF5200D7CE47 /* Info.plist */,
 			);
 			path = ScratchXib2;
+			sourceTree = "<group>";
+		};
+		F12856B6204EBF6E00D7CE47 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				F12856BD204EC18600D7CE47 /* PeopleModel.swift */,
+				F12856BF204EC1A800D7CE47 /* PeopleViewModel.swift */,
+				F12856BB204EC02100D7CE47 /* PeopleViewController.swift */,
+				F12856B9204EBFB800D7CE47 /* PeopleView.swift */,
+				F12856B7204EBFA000D7CE47 /* PeopleView.xib */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		F12856C1204EC40600D7CE47 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F12856C2204EC41300D7CE47 /* Observable.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +153,7 @@
 			files = (
 				F12856AF204EBF5200D7CE47 /* LaunchScreen.storyboard in Resources */,
 				F12856AC204EBF5200D7CE47 /* Assets.xcassets in Resources */,
-				F12856AA204EBF5200D7CE47 /* Main.storyboard in Resources */,
+				F12856B8204EBFA000D7CE47 /* PeopleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +164,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12856A7204EBF5200D7CE47 /* ViewController.swift in Sources */,
 				F12856A5204EBF5200D7CE47 /* AppDelegate.swift in Sources */,
+				F12856BA204EBFB800D7CE47 /* PeopleView.swift in Sources */,
+				F12856BE204EC18600D7CE47 /* PeopleModel.swift in Sources */,
+				F12856C0204EC1A800D7CE47 /* PeopleViewModel.swift in Sources */,
+				F12856C3204EC41300D7CE47 /* Observable.swift in Sources */,
+				F12856BC204EC02100D7CE47 /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F12856A8204EBF5200D7CE47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F12856A9204EBF5200D7CE47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F12856AD204EBF5200D7CE47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
